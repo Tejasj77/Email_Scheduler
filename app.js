@@ -47,12 +47,12 @@ function sendEmail(obj){
     <h4>GoodBye</h4>`
 
     let transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
+        host: config.host,
         port: 587,
         secure: false, // true for 465, false for other ports
         auth: {
           user: 'tejasjoshitj@gmail.com', // generated ethereal user
-          pass: '69917070gaandiv7', // generated ethereal password
+          pass: config.pass, // generated ethereal password
         },
         tls:{
             rejectUnauthorized:false
