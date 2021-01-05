@@ -1,0 +1,17 @@
+extends layout
+block content   
+    h1 Add Email
+    form(method='POST', action = '/add')
+        #form-group
+            label Subject:
+            input.form-control(name='subject',type='text')
+        #form-group
+            label Text:
+            input.form-control(name='text',type='text')
+        #form-group
+            label Email:
+            input.form-control(name='email_id',type='text')
+        #form-group
+            label Time To Send:
+            input.form-control(name='timeToSend',type='text')
+        input.btn.btn-primary(type='submit',value='Save')
